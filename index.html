@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Nav</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <!-- <header class="header">
+            <img src="images/logo.png" alt="main logo" class="logo">
+            <nav class="navbar">
+                <ul class="navbar_lists">
+                    <li><a href="#" class="navbar-link home-link">Home</a></li>
+                    <li><a href="#" class="navbar-link bbout-link">About Us</a></li>
+                    <li><a href="#" class="navbar-link blog-link">Blog</a></li>
+                    <li><a href="#" class="navbar-link portfolio-link">Portfolio</a></li>
+                    <li><a href="#" class="navbar-link contact-link">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-navbar-btn">
+                <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+                <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+            </div>
+        </header>
+   
+    <script>
+        const mobile_nav = document.querySelector(".mobile-navbar-btn");
+        const headerElem = document.querySelector(".header");
+
+        mobile_nav.addEventListener("click", () => {
+            headerElem.classList.toggle("active");
+        });
+    </script> -->
+
+
+    <header>
+        <div class="logo"><img src="images/logo.png" alt="Eotsys Logo"></div>
+        <div class="hamburger">
+            <div class="line_border">
+                <div class="line"></div>           
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" class="">About Us</a></li>
+                <li><a href="#" class="">Blog</a></li>
+                <li><a href="#" class="">Portfolio</a></li>
+                <li><a href="#" class="">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navbar = document.querySelector(".nav-bar");
+            navbar.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
